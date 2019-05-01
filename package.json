@@ -4,7 +4,7 @@
     "description": "Lambda School - Preprocessing I Project",
     "main": "index.js",
     "scripts": {
-        "watch": "less-watch-compiler less css",
+        "watch": "less-watch-compiler less css index.less",
         "build": "rm -rf css; mkdir css; touch css/index.css; find less/ -name '*.less' -exec lessc -x {} ; > css/index.css"
     },
     "repository": {

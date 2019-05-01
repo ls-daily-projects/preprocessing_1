@@ -1,0 +1,24 @@
+{
+    "name": "preprocessing-1",
+    "version": "0.1.0",
+    "description": "Lambda School - Preprocessing I Project",
+    "main": "index.js",
+    "scripts": {
+        "watch": "less-watch-compiler less css",
+        "build": "rm -rf css; mkdir css; touch css/index.css; find less/ -name '*.less' -exec lessc -x {} ; > css/index.css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Miikis/Preprocessing-I.git"
+    },
+    "author": "Mikis Woodwinter",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Miikis/Preprocessing-I/issues"
+    },
+    "homepage": "https://github.com/Miikis/Preprocessing-I#readme",
+    "devDependencies": {
+        "less": "^3.9.0",
+        "less-watch-compiler": "^1.13.0"
+    }
+}
